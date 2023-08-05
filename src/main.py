@@ -14,8 +14,6 @@ def createList(userNumber):
 	return numList
 
 def sortList(numList):
-	sortedList = numList.copy()
-	sortedList.sort()
 	length = len(numList)
 	max = length - 1
 	sorted = False
@@ -24,8 +22,7 @@ def sortList(numList):
 	while sorted != True:
 		swapCount = 0
 		system("clear")
-		print(f"Sorted:   {sortedList}")
-		print(f"Unsorted: {numList}")
+		print(numList)
 		
 		for i in range(0, length):
 			if i == max:
@@ -44,8 +41,7 @@ def sortList(numList):
 			sorted = True
 	
 	system("clear")
-	print(f"Sorted:   {sortedList}")
-	print(f"Unsorted: {numList}")
+	print(numList)
 	print("List has been sorted!")
 
 def main():
