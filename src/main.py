@@ -23,7 +23,8 @@ def sortList(numList, slowDown): # Thanks dad!
 		max = max - 1
 		swapCount = 0
 		system("clear")
-		print(numList)
+		for x in numList:
+			print("=" * x)
 		
 		for i in range(0, max):
 			if numList[i] > numList[i + 1]:
@@ -33,11 +34,13 @@ def sortList(numList, slowDown): # Thanks dad!
 				swapCount = swapCount + 1
 				if slowDown == 1:
 					system("clear")
-					print(numList)
-					sleep(1)
+					for x in numList:
+						print("=" * x)
+					sleep(0.2)
 	
 	system("clear")
-	print(numList)
+	for x in numList:
+		print("=" * x)
 	print("List has been sorted!")
 
 def main():
