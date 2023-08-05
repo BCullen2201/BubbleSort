@@ -14,24 +14,18 @@ def createList(userNumber):
 	return numList
 
 def sortList(numList):
-	length = len(numList)
-	max = length - 1
+	max = len(numList)
 	sorted = False
 	holder = 0
 
 	while sorted != True:
+		max = max - 1
 		swapCount = 0
 		system("clear")
 		print(numList)
 		
-		for i in range(0, length):
-			if i == max:
-				if numList[i] < numList[i - 1]:
-					holder = numList[i]
-					numList[i] = numList[i - 1]
-					numList[i - 1] = holder
-					swapCount = swapCount + 1
-			elif numList[i] > numList[i + 1]:
+		for i in range(0, max):
+			if numList[i] > numList[i + 1]:
 				holder = numList[i]
 				numList[i] = numList[i + 1]
 				numList[i + 1] = holder
