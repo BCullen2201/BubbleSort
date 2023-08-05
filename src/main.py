@@ -13,7 +13,7 @@ def createList(userNumber):
 
 	return numList
 
-def sortList(numList):
+def sortList(numList): # Thanks dad!
 	max = len(numList)
 	holder = 0
 	swapCount = 1
