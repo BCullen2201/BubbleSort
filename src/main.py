@@ -15,10 +15,10 @@ def createList(userNumber):
 
 def sortList(numList):
 	max = len(numList)
-	sorted = False
 	holder = 0
+	swapCount = 1
 
-	while sorted != True:
+	while swapCount != 0:
 		max = max - 1
 		swapCount = 0
 		system("clear")
@@ -30,9 +30,6 @@ def sortList(numList):
 				numList[i] = numList[i + 1]
 				numList[i + 1] = holder
 				swapCount = swapCount + 1
-
-		if swapCount == 0:
-			sorted = True
 	
 	system("clear")
 	print(numList)
