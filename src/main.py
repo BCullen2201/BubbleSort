@@ -16,12 +16,12 @@ def createList(userNumber):
 def sortList(numList):
 	sortedList = numList.copy()
 	sortedList.sort()
+	length = len(numList)
+	max = length - 1
 	sorted = False
 	holder = 0
 
 	while sorted != True:
-		length = len(numList)
-		max = length - 1
 		swapCount = 0
 		system("clear")
 		print(f"Sorted:   {sortedList}")
