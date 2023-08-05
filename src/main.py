@@ -2,6 +2,7 @@
 
 from os import system
 from random import shuffle
+from time import sleep
 
 def createList(userNumber):
 	userNumber = userNumber + 1
@@ -13,7 +14,7 @@ def createList(userNumber):
 
 	return numList
 
-def sortList(numList): # Thanks dad!
+def sortList(numList, slowDown): # Thanks dad!
 	max = len(numList)
 	holder = 0
 	swapCount = 1
@@ -30,6 +31,10 @@ def sortList(numList): # Thanks dad!
 				numList[i] = numList[i + 1]
 				numList[i + 1] = holder
 				swapCount = swapCount + 1
+				if slowDown == 1:
+					system("clear")
+					print(numList)
+					sleep(1)
 	
 	system("clear")
 	print(numList)
@@ -37,9 +42,14 @@ def sortList(numList): # Thanks dad!
 
 def main():
 	system("clear")
+	slowDown = 0
 	userNumber = input("How many numbers do you want to sort?: ")
+	slowChoice = input("Do you want the script to run slowly? Y/n: ")
+	if slowChoice == "Y" or slowChoice == "y":
+		slowDown = 1
+
 	list = createList(int(userNumber))
-	sortList(list)
+	sortList(list, slowDown)
 
 if __name__ == "__main__":
 	main()
