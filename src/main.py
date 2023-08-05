@@ -29,22 +29,16 @@ def sortList(numList):
 		
 		for i in range(0, length):
 			if i == max:
-				if numList[i] > numList[i - 1]:
-					pass
-				elif numList[i] < numList[i - 1]:
+				if numList[i] < numList[i - 1]:
 					holder = numList[i]
 					numList[i] = numList[i - 1]
 					numList[i - 1] = holder
 					swapCount = swapCount + 1
-			elif numList[i] < numList[i + 1]:
-				pass
 			elif numList[i] > numList[i + 1]:
 				holder = numList[i]
 				numList[i] = numList[i + 1]
 				numList[i + 1] = holder
 				swapCount = swapCount + 1
-			else:
-				pass
 
 		if swapCount == 0:
 			sorted = True
