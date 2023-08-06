@@ -45,6 +45,7 @@ def sortList(numList, slowDown, seconds): # Thanks dad!
 
 def main():
 	system("clear")
+	seconds = 0
 	slowDown = 0
 	userNumber = input("How many numbers do you want to sort?: ")
 	slowChoice = input("Do you want the script to run slowly? Y/n: ")
