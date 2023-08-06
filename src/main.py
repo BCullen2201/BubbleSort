@@ -14,7 +14,7 @@ def createList(userNumber):
 
 	return numList
 
-def sortList(numList, slowDown): # Thanks dad!
+def sortList(numList, slowDown, seconds): # Thanks dad!
 	max = len(numList)
 	holder = 0
 	swapCount = 1
@@ -36,7 +36,7 @@ def sortList(numList, slowDown): # Thanks dad!
 					system("clear")
 					for x in numList:
 						print("=" * x)
-					sleep(0.2)
+					sleep(seconds)
 	
 	system("clear")
 	for x in numList:
@@ -50,9 +50,10 @@ def main():
 	slowChoice = input("Do you want the script to run slowly? Y/n: ")
 	if slowChoice == "Y" or slowChoice == "y":
 		slowDown = 1
+		seconds = input("How many seconds do you want to wait after each swap?: ")
 
 	list = createList(int(userNumber))
-	sortList(list, slowDown)
+	sortList(list, slowDown, float(seconds))
 
 if __name__ == "__main__":
 	main()
