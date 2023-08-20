@@ -19,12 +19,13 @@ def sortList(numList, slowDown, seconds): # Thanks dad!
 	holder = 0
 	swapCount = 1
 
+	for x in numList:
+		print("=" * x)
+
 	while swapCount != 0:
 		max = max - 1
 		swapCount = 0
 		system("clear")
-		for x in numList:
-			print("=" * x)
 		
 		for i in range(0, max):
 			if numList[i] > numList[i + 1]:
