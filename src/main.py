@@ -42,7 +42,6 @@ def sortList(numList, slowDown, seconds): # Thanks dad!
 	system("clear")
 	for x in numList:
 		print("=" * x)
-	print("List has been sorted!")
 
 def main():
 	system("clear")
