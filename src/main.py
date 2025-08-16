@@ -33,13 +33,12 @@ def sortList(numList, slowDown, seconds): # Thanks dad!
 				numList[i] = numList[i + 1]
 				numList[i + 1] = holder
 				swapCount = swapCount + 1
+				system("clear")
+				for x in numList:
+					print("=" * x)
 				if slowDown == 1:
-					system("clear")
-					for x in numList:
-						print("=" * x)
 					sleep(seconds)
 	
-	system("clear")
 	for x in numList:
 		print("=" * x)
 
