@@ -20,7 +20,7 @@ def sortList(numList, slowDown, seconds): # Thanks dad!
 	swapCount = 1
 
 	for x in numList:
-		print("=" * x)
+		print("-" * x)
 
 	while swapCount != 0:
 		max = max - 1
@@ -35,7 +35,7 @@ def sortList(numList, slowDown, seconds): # Thanks dad!
 				swapCount = swapCount + 1
 				system("clear")
 				for x in numList:
-					print("=" * x)
+					print("-" * x)
 				if slowDown == 1:
 					sleep(seconds)
 	
