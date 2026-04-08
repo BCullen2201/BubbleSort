@@ -40,7 +40,7 @@ def sortList(numList, slowDown, seconds): # Thanks dad!
 					sleep(seconds)
 	
 	for x in numList:
-		print("=" * x)
+		print("-" * x)
 
 def main():
 	system("clear")
